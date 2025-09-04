@@ -1,0 +1,258 @@
+{
+  "personalInfo": {
+    "name": "Chouaeb Rahal",
+    "title": "Junior Network Administrator",
+    "bio": "Dedicated and detail-oriented Junior Network Administrator with a strong foundation in network configuration, maintenance, and troubleshooting. Proven ability to support and optimize network performance, ensuring high availability and security. Eager to apply technical skills and a passion for problem-solving to contribute to a dynamic IT team and support business objectives. Welcome to my online portfolio. Check out my latest projects and case studies.",
+    "profileImage": "/assets/images/chouaib-pro.jpeg",
+    "cvUrl": "/assets/cv/chouaib-cv.pdf",
+    "contact": {
+      "phone": "+213 796095623",
+      "email": "chouaebrahal@gmail.com",
+      "website": "www.chouaebrahal.com"
+    },
+    "about": "Summarise your career profile here lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "workExperience": [
+      {
+        "id": 1,
+        "period": "2023 - Present",
+        "company": "Google",
+        "position": "Tech Lead",
+        "description": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta est diam, et blandit ipsum suscipit facilibus. Praesent nec semper eros. Aliquam quis turpis sed metus mollis luctus vitae rhoncus mi.",
+          "Vivamus accumsan purus at urna tincidunt convallis. Sed nisl dolor, elementum eget tempus ac, blandit ac mi. Aliquam id tellus ut arcu luctus accumsan in at odio.",
+          "Morbi condimentum, lorem in pharetra mollis, purus justo sollicitudin dolor, tristique vulputate mi odio sit amet ante."
+        ]
+      }
+    ],
+    "techStack": [
+      "JavaScript",
+      "ReactJS",
+      "Python",
+      "MongoDB"
+    ],
+    "softSkills": [
+      "Leadership",
+      "Project Management",
+      "DevOps",
+      "Public Speaking"
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project lorem ipsum",
+        "description": "Project desc goes here aenean ut libero at amet ante fermentum scelerisque non a leo."
+      },
+      {
+        "id": 2,
+        "title": "Volutpat App",
+        "description": "You can link to your project Github page."
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "degree": "MSc in Computer Science",
+        "institution": "Oxford University",
+        "period": "2016 - 2017"
+      },
+      {
+        "id": 2,
+        "degree": "BSc Maths and Physics",
+        "institution": "University of California, Berkeley",
+        "period": "2012 - 2016"
+      }
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "proficiency": 100
+      },
+      {
+        "name": "Spanish",
+        "proficiency": 85
+      }
+    ]
+  },
+  "projects": [
+  {
+    "id": 1,
+    "title": "University Network Project",
+    "slug": "university-network-project",
+    "shortDescription": "Designed and configured a multi-campus university network with VLANs, RIP v2 routing, static routes, and network services.",
+    "fullDescription": "A Cisco Packet Tracer project simulating the network of a university with two campuses and four faculties. Implemented VLANs for departments, RIP v2 routing with static routes for external servers, DHCP for dynamic IP allocation, and deployed web and mail servers. Ensured reliable end-to-end connectivity and network segmentation across administrative offices and student labs.",
+    "image": "/assets/images/university-project.png",
+    "images": [],
+    "techStack": [
+      { "name": "Cisco Packet Tracer", "color": "#1BA0D7" },
+      { "name": "Routing (RIP v2)", "color": "#f59e0b" },
+      { "name": "VLANs", "color": "#10b981" }
+    ],
+    "features": [
+      "Multi-campus topology",
+      "VLAN segmentation",
+      "RIP v2 dynamic routing",
+      "Static routing for external servers",
+      "DHCP, DNS, and Mail services"
+    ],
+    "links": {
+      "caseStudy": "#",
+      "github": "",
+      "live": ""
+    },
+    "category": "Networking",
+    "status": "completed",
+    "year": "2024"
+  },
+  {
+    "id": 2,
+    "title": "Hotel Network Project",
+    "slug": "hotel-network-project",
+    "shortDescription": "Developed a three-floor hotel network with VLANs, OSPF routing, DHCP, SSH access, and port security.",
+    "fullDescription": "Designed and implemented a Cisco Packet Tracer project for a hotel network with multiple departments across three floors. Configured VLANs per department, OSPF routing across three routers, DHCP server for IP allocation, SSH for secure remote access, and port security on switches. Provided reliable connectivity, network segmentation, and enhanced security.",
+    "image": "/assets/images/hotel-project.png",
+    "images": [
+      "/assets/images/hotel-project2.png",
+      "/assets/images/hotel-project3.png",
+      "/assets/images/hotel-project4.png"
+    ],
+    "techStack": [
+      { "name": "Cisco Packet Tracer", "color": "#1BA0D7" },
+      { "name": "Routing (OSPF)", "color": "#f59e0b" },
+      { "name": "DHCP", "color": "#10b981" },
+      { "name": "SSH", "color": "#2563eb" },
+      { "name": "Port Security", "color": "#ef4444" }
+    ],
+    "features": [
+      "Three-floor hotel topology",
+      "Department-based VLAN segmentation",
+      "OSPF dynamic routing",
+      "DHCP server for dynamic addressing",
+      "SSH secure remote access",
+      "Switch port security"
+    ],
+    "links": {
+      "caseStudy": "#",
+      "github": "",
+      "live": ""
+    },
+    "category": "Networking",
+    "status": "completed",
+    "year": "2024"
+  },
+  {
+    "id": 3,
+    "title": "Master Thesis Project - Secure Time Synchronization",
+    "slug": "secure-time-synchronization",
+    "shortDescription": "Enhanced the security of time synchronization protocols using anomaly detection methods.",
+    "fullDescription": "Final-year academic project for Master’s degree. Analyzed vulnerabilities in time synchronization protocols, proposed an anomaly detection method to identify malicious or faulty nodes, and validated improvements through simulation. Focused on improving the robustness and reliability of distributed systems synchronization.",
+    "image": "/assets/images/master-thesis.png",
+    "images": [
+      
+    ],
+    "techStack": [
+      { "name": "Networking", "color": "#3b82f6" },
+      { "name": "Distributed Systems", "color": "#9333ea" },
+      { "name": "Security", "color": "#ef4444" }
+    ],
+    "features": [
+      "Analysis of protocol vulnerabilities",
+      "Outlier detection for anomaly detection",
+      "Simulation-based validation",
+      "Focus on distributed systems"
+    ],
+    "links": {
+      "caseStudy": "#",
+      "github": "",
+      "live": ""
+    },
+    "category": "Academic Project",
+    "status": "completed",
+    "year": "2024"
+  },
+  {
+    "id": 4,
+    "title": "E-commerce Website",
+    "slug": "ecommerce-website",
+    "shortDescription": "Developed a simple e-commerce platform as part of Bachelor’s degree coursework.",
+    "fullDescription": "Academic project completed during Bachelor’s studies. Built a basic e-commerce website with product management, shopping cart, and user authentication features. Strengthened knowledge of web technologies and full-stack development fundamentals.",
+    "image": "/assets/images/ecommerce.png",
+    "images": [
+    ],
+    "techStack": [
+      { "name": "HTML", "color": "#e34f26" },
+      { "name": "CSS", "color": "#1572b6" },
+      { "name": "JavaScript", "color": "#f7df1e" }
+    ],
+    "features": [
+      "Product catalog management",
+      "Shopping cart functionality",
+      "User authentication"
+    ],
+    "links": {
+      "caseStudy": "#",
+      "github": "",
+      "live": ""
+    },
+    "category": "Web",
+    "status": "completed",
+    "year": "2022"
+  }
+],
+
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "You can list client testimonials here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at erat sit quam cursus sagittis. Highlighted text example client volutpat ornare quam et cursus mi tristique et amet.",
+      "author": "Dan Doe, Lead Developer at Stripe",
+      "company": "Stripe"
+    },
+    {
+      "id": 2,
+      "text": "Chouaib delivered exceptional work on our mobile banking application. His attention to detail and technical expertise made our project a huge success.",
+      "author": "Sarah Johnson, Product Manager at Google",
+      "company": "Google"
+    }
+  ],
+  "clients": [
+    {
+      "name": "Wire",
+      "logo": "/assets/images/clients/wire-logo.png"
+    },
+    {
+      "name": "Netflix",
+      "logo": "/assets/images/clients/netflix-logo.png"
+    },
+    {
+      "name": "Coinbase",
+      "logo": "/assets/images/clients/coinbase-logo.png"
+    },
+    {
+      "name": "Revolut",
+      "logo": "/assets/images/clients/revolut-logo.png"
+    },
+    {
+      "name": "Spotify",
+      "logo": "/assets/images/clients/spotify-logo.png"
+    },
+    {
+      "name": "Google",
+      "logo": "/assets/images/clients/google-logo.png"
+    },
+    {
+      "name": "PayPal",
+      "logo": "/assets/images/clients/paypal-logo.png"
+    },
+    {
+      "name": "Stripe",
+      "logo": "/assets/images/clients/stripe-logo.png"
+    },
+    {
+      "name": "Monzo",
+      "logo": "/assets/images/clients/monzo-logo.png"
+    },
+    {
+      "name": "Uber",
+      "logo": "/assets/images/clients/uber-logo.png"
+    }
+  ]
+}
