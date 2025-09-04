@@ -23,7 +23,7 @@ export function Sidebar({ currentPage, onPageChange, isOpen, setIsOpen }: Sideba
       {/* Overlay for mobile */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -86,8 +86,8 @@ export function Sidebar({ currentPage, onPageChange, isOpen, setIsOpen }: Sideba
 
                 {/* Show labels only when expanded on desktop */}
                 <span
-                  className={`md:block sm:hidden ml-3 text-sm font-medium transition-all duration-200 ${
-                    isOpen ? "opacity-100 block" : "!hidden opacity-0 w-0 overflow-hidden"
+                  className={`ml-3 text-sm font-medium transition-all duration-200 ${
+                    isOpen ? "block opacity-100 " : "hidden opacity-0 overflow-hidden"
                   }`}
                 >
                   {item.label}

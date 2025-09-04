@@ -76,11 +76,11 @@ export function AboutPage({ onProjectSelect, onViewMore }: AboutPageProps) {
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className="bg-gray-800/50 border-gray-700 hover:border-[#fee715] transition-all duration-300 hover:shadow-lg hover:shadow-[#fee715]/10 group cursor-pointer"
+                className="bg-gray-800/50 pt-0  border-gray-700 hover:border-[#fee715] transition-all duration-300 hover:shadow-lg hover:shadow-[#fee715]/10 group cursor-pointer"
                 onClick={() => onProjectSelect && onProjectSelect(project.id)}
               >
-                <CardContent className="p-0">
-                  <div className="relative overflow-hidden rounded-t-lg">
+                <CardContent className="p-0 ">
+                  <div className="relative overflow-hidden rounded-t-lg ">
                     <img
                       src={
                         project.image ||

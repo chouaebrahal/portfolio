@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, Globe, User, Briefcase, Wrench, Users, Code, GraduationCap, Languages } from "lucide-react"
+import Link from "next/link"
 
 export function ResumePage() {
   return (
@@ -25,7 +26,7 @@ export function ResumePage() {
           </div>
           <div className="flex items-center gap-2">
             <Globe className="w-4 h-4" />
-            <span>www.yourwebsite.com</span>
+            <span><Link href="https://chouaebrahal.vercel.app">chouaebrahal.vercel.app</Link></span>
           </div>
         </div>
       </section>

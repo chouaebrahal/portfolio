@@ -13,6 +13,7 @@ import { AdminPage } from "@/components/pages/admin-page"
 import { LoginPage } from "@/components/auth/login-page"
 import { MouseBlob } from "@/components/mouse-blob"
 import { getProjectById, getPersonalInfo } from "@/lib/data"
+import Link from "next/link"
 
 export default function Portfolio() {
   const [currentPage, setCurrentPage] = useState("about")
@@ -74,10 +75,10 @@ export default function Portfolio() {
   }
 
   const handleDownloadCV = () => {
-    const cvUrl = personalInfo.cvUrl || "/assets/cv/daniel-lopez-cv.pdf"
+    const cvUrl = personalInfo.cvUrl || "/assets/cv/cv-w-eng.pdf"
     const link = document.createElement("a")
     link.href = cvUrl
-    link.download = "Daniel-Lopez-CV.pdf"
+    link.download = "Chouaeb-Rahal-CV.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -154,34 +155,34 @@ export default function Portfolio() {
       />
 
       {/* Main Content */}
-      <div className="ml-16 transition-all duration-300 ease-in-out">
+      <div className=" transition-all duration-300 ease-in-out">
         {/* Header */}
         <header className="flex items-center justify-between p-4 border-b border-gray-800/50 backdrop-blur-sm bg-[#101820]/90 sticky top-0 z-20">
           <div className="flex items-center gap-4">
             <Menu className="w-5 h-5 text-[#fee715] md:hidden" onClick={() => setIsSidebarOpen(!isSidebarOpen)}/>
-            <div className="flex items-center gap-2">
+            <div className="hidden sm:flex items-center gap-2  ">
               <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
               <div className="w-3 h-3 bg-[#fee715] rounded-full animate-pulse" style={{ animationDelay: "0.5s" }}></div>
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" style={{ animationDelay: "1s" }}></div>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <X className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
+            <X className="hidden md:block w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
             <ExternalLink className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
-            <Linkedin className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
-            <Github className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
+            <Link href={"https://www.linkedin.com/in/chouaeb-rahal"}> <Linkedin className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" /></Link>
+            <Link href={"https://www.github.com/chouaebrahal/"}><Github className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" /></Link>
             <Mail className="w-4 h-4 text-gray-400 hover:text-[#fee715] cursor-pointer transition-all duration-200 hover:scale-110" />
             <Button
               onClick={handleDownloadCV}
               variant="outline"
               size="sm"
-              className="border-[#fee715] text-[#fee715] hover:bg-[#fee715] hover:text-[#101820] transition-all duration-200 bg-transparent cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-[#fee715]/20"
+              className="border-[#fee715] text-[#fee715] text-[10px]  hover:bg-[#fee715]  hover:text-[#101820] transition-all duration-200 bg-transparent cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-[#fee715]/20"
             >
-              <Download className="w-4 h-4 mr-2" />
+              <Download className="w-2 h-2 md:w-4 md:h-4 " />
               CV
             </Button>
           </div>
-          <Button className="bg-[#fee715] hover:bg-[#fee715]/90 text-[#101820] font-semibold px-6 py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#fee715]/20 cursor-pointer hover:scale-105 animate-pulse">
+          <Button className="bg-[#fee715] hover:bg-[#fee715]/90 text-[#101820]  px-2 text-[12px] md:px-6 md:py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#fee715]/20 cursor-pointer hover:scale-105 animate-pulse">
             Hire Me
           </Button>
         </header>
