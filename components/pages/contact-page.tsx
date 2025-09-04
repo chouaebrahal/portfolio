@@ -10,13 +10,13 @@ export function ContactPage() {
       {/* Header */}
       <section className="text-center py-16 px-4">
         <Avatar className="w-24 h-24 mx-auto mb-6">
-          <AvatarImage src="/professional-developer-headshot.png" alt="Daniel Lopez" />
-          <AvatarFallback>DL</AvatarFallback>
+          <AvatarImage src="/assets/images/chouaib-pro.jpeg" alt="Chouaeb Rahal" />
+          <AvatarFallback>CR</AvatarFallback>
         </Avatar>
         <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
         <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-          Contact intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat sodales massa
-          vitae ornare. Quisque ac ipsum quam.
+          I’m always open to new opportunities, collaborations, or any questions you may have. Feel free to reach out to me via email or through my social media channels, and I’ll get back to you as soon as possible.
+           Let’s connect and create something amazing together!
         </p>
       </section>
 
@@ -27,16 +27,29 @@ export function ContactPage() {
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold text-center mb-8">Contact Form</h2>
 
-              <form className="space-y-6">
+              <form
+                className="space-y-6"
+                onSubmit={e => {
+                  e.preventDefault();
+                  const form = e.target as HTMLFormElement;
+                  const name = (form.elements.namedItem("name") as HTMLInputElement)?.value || "";
+                  const email = (form.elements.namedItem("email") as HTMLInputElement)?.value || "";
+                  const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value || "";
+                  const mailto = `mailto:chouaebrahal@gmail.com?subject=Contact from ${encodeURIComponent(name)} (${encodeURIComponent(email)})&body=${encodeURIComponent(message)}`;
+                  window.location.href = mailto;
+                }}
+              >
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <Input
+                      name="name"
                       placeholder="Name"
                       className="bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-[#fee715] focus:ring-[#fee715]"
                     />
                   </div>
                   <div>
                     <Input
+                      name="email"
                       type="email"
                       placeholder="Email"
                       className="bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-[#fee715] focus:ring-[#fee715]"
@@ -46,6 +59,7 @@ export function ContactPage() {
 
                 <div>
                   <Textarea
+                    name="message"
                     placeholder="Enter your message"
                     rows={8}
                     className="bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-[#fee715] focus:ring-[#fee715] resize-none"

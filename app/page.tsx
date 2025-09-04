@@ -182,7 +182,10 @@ export default function Portfolio() {
               CV
             </Button>
           </div>
-          <Button className="bg-[#fee715] hover:bg-[#fee715]/90 text-[#101820]  px-2 text-[12px] md:px-6 md:py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#fee715]/20 cursor-pointer hover:scale-105 animate-pulse">
+          <Button
+            className="bg-[#fee715] hover:bg-[#fee715]/90 text-[#101820]  px-2 text-[12px] md:px-6 md:py-2 rounded-full transition-all duration-200 shadow-lg hover:shadow-[#fee715]/20 cursor-pointer hover:scale-105 animate-pulse"
+            onClick={() => setCurrentPage("contact")}
+          >
             Hire Me
           </Button>
         </header>
